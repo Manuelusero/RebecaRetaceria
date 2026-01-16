@@ -2,7 +2,7 @@ import React from 'react';
 
 const Features: React.FC = () => {
   return (
-    <section className="bg-white py-8 md:py-16">
+    <section className="bg-white py-8 md:py-16 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 md:px-8" style={{ display: 'flex', flexDirection: 'column', gap: '36px' }}>
         
         {/* Card 1: Variedad y Calidad */}
@@ -37,11 +37,46 @@ const Features: React.FC = () => {
 
         {/* Card 2: Atención Personalizada - SIN BORDE */}
         <div 
-          className="flex flex-col md:flex-row rounded-lg overflow-hidden mx-auto"
-          style={{ width: '100%', maxWidth: '960px', height: 'auto', minHeight: '300px' }}
-        >
+          className="flex flex-col md:flex-row rounded-lg mx-auto relative"
+          style={{ width: '100%', maxWidth: '960px', height: 'auto', minHeight: '300px', overflow: 'visible' }}
+        >  
+          <svg 
+            className="absolute"
+            style={{
+              bottom: '-10px',
+              right: '-50px',
+              width: '500px',
+              height: '350px',
+              zIndex: 5,
+            }}
+            viewBox="0 0 300 250"
+          >
+            <path
+              d="M 50 250 Q 150 0, 250 250"
+              fill="none"
+              stroke="#777777"
+              strokeWidth="1"
+              strokeDasharray="4,4"
+            />
+          </svg>
+
+          {/* Tijeras para el círculo de la card 2 */}
+          <div 
+            className="absolute"
+            style={{
+              bottom: '110px',
+              right: '160px',
+              zIndex: 6,
+              fontSize: '24px',
+              color: '#0F0F0F',
+              transform: 'rotate(45deg)',
+            }}
+          >
+            <i className="bi bi-scissors"></i>
+          </div>
+
           {/* Imagen - En mobile arriba, en desktop izquierda */}
-          <div className="order-1" style={{ width: '100%', minHeight: '250px' }}>
+          <div className="order-1 overflow-hidden rounded-l-lg" style={{ width: '100%', minHeight: '250px' }}>
             <img 
               src="/image3.jpeg" 
               alt="Atención personalizada"
@@ -50,17 +85,21 @@ const Features: React.FC = () => {
           </div>
           {/* Texto - En mobile abajo, en desktop derecha con fondo clarito */}
           <div className="flex flex-col justify-center items-start bg-rebeca-bg p-8 md:p-12 order-2" style={{ width: '100%', minHeight: '200px' }}>
+              {/* Línea punteada circular en la esquina derecha superior */}
+        
             <h3 
               className="font-inter text-rebeca-brand mb-4"
-              style={{ fontSize: 'clamp(24px, 5vw, 32px)', fontWeight: 700 }}
+              style={{ fontSize: 'clamp(24px, 5vw, 32px)', fontWeight: 700, lineHeight: '1.3' }}
             >
-              Atención Personalizada
+              Atención<br />
+              Personalizada
             </h3>
             <p 
               className="font-inter text-rebeca-gray"
-              style={{ fontSize: 'clamp(16px, 3vw, 18px)', fontWeight: 400 }}
+              style={{ fontSize: 'clamp(16px, 3vw, 18px)', fontWeight: 400, lineHeight: '1.5' }}
             >
-              Por parte de personal experimentado
+              por parte de personal<br />
+              experimentado
             </p>
           </div>
         </div>
