@@ -214,8 +214,8 @@ const Hero: React.FC = () => {
               className="relative z-10"
               style={{ 
                 width: '100%', 
-                height: 'auto',
-                maxHeight: '350px',
+                height: '450px',
+                maxHeight: '450px',
                 objectFit: 'cover',
                 borderTopLeftRadius: '60px',
                 borderTopRightRadius: '60px',
