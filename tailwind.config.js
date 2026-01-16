@@ -18,6 +18,7 @@ export default {
             fontFamily: {
                 'roboto': ['Roboto', 'sans-serif'],
                 'inter': ['Inter', 'sans-serif'],
+                'passionone': ['"Passion One"', 'cursive'],
             },
         },
     },

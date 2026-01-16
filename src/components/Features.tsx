@@ -38,21 +38,22 @@ const Features: React.FC = () => {
         {/* Card 2: Atención Personalizada - SIN BORDE */}
         <div 
           className="flex flex-col md:flex-row rounded-lg mx-auto relative"
-          style={{ width: '100%', maxWidth: '960px', height: 'auto', minHeight: '300px', overflow: 'visible' }}
-        >  
+          style={{ width: '100%', maxWidth: '960px', height: 'auto', minHeight: '300px' }}
+        >
+          {/* Semicírculo punteado decorativo */}
           <svg 
-            className="absolute"
+            className="absolute hidden xl:block"
             style={{
-              bottom: '-10px',
-              right: '-50px',
-              width: '500px',
-              height: '350px',
-              zIndex: 5,
+              top: '405px',
+              right: '-17px',
+              width: '400px',
+              height: '400px',
+              zIndex: 1,
             }}
-            viewBox="0 0 300 250"
+            viewBox="0 0 200 200"
           >
             <path
-              d="M 50 250 Q 150 0, 250 250"
+              d="M 10 100 A 90 90 0 0 1 190 100"
               fill="none"
               stroke="#777777"
               strokeWidth="1"
@@ -60,16 +61,16 @@ const Features: React.FC = () => {
             />
           </svg>
 
-          {/* Tijeras para el círculo de la card 2 */}
+          {/* Tijeras para el semicírculo */}
           <div 
-            className="absolute"
+            className="absolute hidden xl:block"
             style={{
-              bottom: '110px',
-              right: '160px',
-              zIndex: 6,
-              fontSize: '24px',
+              top: '566px',
+              right: '347px',
+              zIndex: 2,
+              fontSize: '32px',
               color: '#0F0F0F',
-              transform: 'rotate(45deg)',
+              transform: 'rotate(10deg)',
             }}
           >
             <i className="bi bi-scissors"></i>
@@ -83,10 +84,9 @@ const Features: React.FC = () => {
               style={{ width: '100%', height: '100%', objectFit: 'cover', minHeight: '250px' }}
             />
           </div>
+          
           {/* Texto - En mobile abajo, en desktop derecha con fondo clarito */}
           <div className="flex flex-col justify-center items-start bg-rebeca-bg p-8 md:p-12 order-2" style={{ width: '100%', minHeight: '200px' }}>
-              {/* Línea punteada circular en la esquina derecha superior */}
-        
             <h3 
               className="font-inter text-rebeca-brand mb-4"
               style={{ fontSize: 'clamp(24px, 5vw, 32px)', fontWeight: 700, lineHeight: '1.3' }}
@@ -98,7 +98,7 @@ const Features: React.FC = () => {
               className="font-inter text-rebeca-gray"
               style={{ fontSize: 'clamp(16px, 3vw, 18px)', fontWeight: 400, lineHeight: '1.5' }}
             >
-              por parte de personal<br />
+              Por parte de personal<br />
               experimentado
             </p>
           </div>

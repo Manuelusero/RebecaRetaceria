@@ -20,6 +20,7 @@ export const typography = {
   // Font families
   fontRoboto: 'Roboto, sans-serif',
   fontInter: 'Inter, sans-serif',
+  fontPassionOne: 'Passion One, cursive',
   
   // Font sizes
   sizeNav: '15px',
