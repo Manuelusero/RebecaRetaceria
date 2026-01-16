@@ -2,7 +2,7 @@ import React from 'react';
 
 const InfoSection: React.FC = () => {
   return (
-    <section id="ubicacion" style={{ background: '#FFFFFF' }}>
+    <section style={{ background: '#FFFFFF' }}>
       {/* Título principal */}
       <div className="text-center flex flex-col justify-center items-center relative z-20" style={{ width: '100%', height: '256px', background: 'linear-gradient(to bottom, #FFFAE4 0%, #FFFFFF 100%)' }}>
         <h2 
@@ -20,7 +20,7 @@ const InfoSection: React.FC = () => {
       </div>
 
       {/* Contenedor de Mapa e Información */}
-      <div className="bg-rebeca-bg" style={{ width: '100%' }}>
+      <div id="ubicacion" className="bg-rebeca-bg" style={{ width: '100%' }}>
         <div className="flex justify-center py-12 px-4 md:px-0">
           <div
             className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-0"

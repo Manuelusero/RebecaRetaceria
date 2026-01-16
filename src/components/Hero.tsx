@@ -215,6 +215,7 @@ const Hero: React.FC = () => {
               style={{ 
                 width: '100%', 
                 height: 'auto',
+                maxHeight: '350px',
                 objectFit: 'cover',
                 borderTopLeftRadius: '60px',
                 borderTopRightRadius: '60px',
