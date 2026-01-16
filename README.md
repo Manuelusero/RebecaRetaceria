@@ -55,12 +55,15 @@ RebecaRetaceria/
 ## 🎯 Funcionalidades Principales
 
 ### 1. Hero Section
+
 Sección de bienvenida con el nombre y descripción de la retacería
 
 ### 2. Galería de Productos
+
 Exhibición de imágenes de retazos, telas y productos disponibles
 
 ### 3. Contacto
+
 - Información de ubicación
 - Teléfono y WhatsApp
 - Horarios de atención
@@ -69,6 +72,7 @@ Exhibición de imágenes de retazos, telas y productos disponibles
 ## 🌐 Deploy
 
 Este proyecto puede ser desplegado fácilmente en:
+
 - **Vercel** (recomendado)
 - **Netlify**
 - **GitHub Pages**
@@ -92,4 +96,3 @@ Desarrollado por Manuel Usero para Rebeca Retacería
 ---
 
 **Última actualización:** Enero 2026
-
